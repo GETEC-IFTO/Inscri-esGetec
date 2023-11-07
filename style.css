@@ -130,6 +130,8 @@ body, html {
     border-radius: 5px;
     background-color: #083f12;
     box-shadow: 0 0 40px #1d4688;
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -202,4 +204,13 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+ body {
+   font-size: 18px;
+ }
+ .container {
+   width: 100%;
+ }
 }
