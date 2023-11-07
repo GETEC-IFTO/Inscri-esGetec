@@ -120,9 +120,9 @@ body, html {
 
 
 .container {
-    width: 50%;
-    min-width: 450;
-    max-width: 1000;
+    width: 75%;
+    min-width: 450px;
+    max-width: 850px;
     margin: auto;
     padding: 20px;
     border: 1px solid #1d4688;
