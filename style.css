@@ -60,6 +60,7 @@ body, html {
     text-align: center;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
     #regressive_Count div{
@@ -69,9 +70,21 @@ body, html {
         color: aliceblue;
         box-sizing: border-box;
         border-radius: 10%;
-        width: 130px;
-        height: 120px;
+        width: calc(10% - 10px);
+        height: 90%;
     }
+        @media (max-width = 768px){
+            #regressive_Count div{
+                width: calc(8% - 10px);
+                font-size: 50px;
+            }
+        }
+        @media (max-width = 480px){
+            #regressive_Count div{
+                width: calc(5% - 10px);
+                font-size: 30px;
+            }
+        }
 
     #regressive_Count_label{
         text-align: center;
@@ -99,7 +112,7 @@ body, html {
         width: 130px;
         height: 10px;
         color: #fff;
-        font-size: 170%;
+        font-size: 150%;
         font-family: 'Exo 2', sans-serif;
         display: inline-block;
         margin: 0px;
@@ -107,10 +120,10 @@ body, html {
 
 
 .container {
-    width: 45%;
+    width: 50%;
     min-width: 450;
-    max-width: 900;
-    margin: 0 auto;
+    max-width: 1000;
+    margin: auto;
     padding: 20px;
     border: 1px solid #1d4688;
     color: #ffff;
@@ -131,8 +144,8 @@ label {
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select[name="tipo_participante"]{
     width: 95%;
-    max-width: 1280px;
-    font-size: 20px;
+    max-width: 950px;
+    font-size: 130%;
     padding: 10px;
     margin-bottom: 15px;
     background-color: #d6d8da;
@@ -141,7 +154,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 }
 
 label[for="nome"], label[for="email"], label[for="telefone"], label[for="cpf"], label[for="tipo_participante"]{
-    font-size: 22px;
+    font-size: 130%;
     font-family: 'Lato', sans-serif;
 }
 
